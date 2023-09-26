@@ -1,0 +1,66 @@
+{
+  "popular": [
+    {
+      "category_id": 17,
+      "title": "Space",
+      "icon": "space.svg"
+    },
+    {
+      "category_id": 23,
+      "title": "History",
+      "icon": "history.svg"
+    },
+    {
+      "category_id": 21,
+      "title": "Sport",
+      "icon": "sports.svg"
+    }
+  ],
+  "all": [
+    {
+      "category_id": 17,
+      "title": "Space",
+      "icon": "space.svg"
+    },
+    {
+      "category_id": 23,
+      "title": "History",
+      "icon": "history.svg"
+    },
+    {
+      "category_id": 21,
+      "title": "Sport",
+      "icon": "sports.svg"
+    },
+    {
+      "category_id": 11,
+      "title": "Film",
+      "icon": "film.png"
+    },
+    {
+      "category_id": 12,
+      "title": "Music",
+      "icon": "music.png"
+    },
+    {
+      "category_id": 14,
+      "title": "Television",
+      "icon": "television.png"
+    },
+    {
+      "category_id": 24,
+      "title": "Politics",
+      "icon": "politics.png"
+    },
+    {
+      "category_id": 26,
+      "title": "Celebrities",
+      "icon": "celebrity.png"
+    },
+    {
+      "category_id": 10,
+      "title": "Book",
+      "icon": "book.png"
+    }
+  ]
+}

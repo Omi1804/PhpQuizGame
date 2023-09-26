@@ -1,0 +1,236 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 500px;
+  margin-inline: auto;
+  height: 100vh;
+  overflow: hidden;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.heroSec {
+  width: 100%;
+  height: 30rem;
+  border-radius: 30px;
+  background: #ffc102;
+  position: relative;
+
+  .header {
+    margin: 0 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 0.5rem;
+    padding-block: 1.4rem 0;
+
+    .backImg {
+      width: 1.7rem;
+      height: 1.5rem;
+      > img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+
+    .profileAvatarImg {
+      width: 3rem;
+      height: 3rem;
+      border-radius: 2rem;
+      border: 3px solid white;
+
+      overflow: hidden;
+      > img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+
+  .options {
+    padding: 0.3rem 0.7rem;
+    display: none;
+
+    > ul {
+      display: flex;
+      align-items: center;
+      justify-content: start;
+      gap: 0.5rem;
+      color: #fff;
+      text-align: center;
+      font-family: Poppins;
+
+      > li {
+        font-size: 1.4rem;
+        cursor: pointer;
+        margin-inline: 0.3rem;
+        font-weight: 400;
+      }
+
+      > li:nth-child(1) {
+        font-weight: 600;
+        font-size: 1.5rem;
+      }
+    }
+  }
+
+  .leaderboard {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    top: 3rem;
+
+    > div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .avatar {
+        width: 4rem;
+        height: 4rem;
+        border-radius: 3.5rem;
+        overflow: hidden;
+        > img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          object-position: center;
+        }
+      }
+
+      .position {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-block-start: 1rem;
+        margin-inline: -0.6rem;
+
+        .posImg {
+          width: 8rem;
+
+          > img {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            object-fit: cover;
+          }
+        }
+
+        > p {
+          position: absolute;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          font-size: 5rem;
+          font-weight: 700;
+          color: white;
+          font-family: Poppins;
+          line-height: 1;
+
+          > span {
+            font-size: 1rem;
+            font-weight: 400;
+          }
+        }
+      }
+    }
+
+    .first .avatar,
+    .second .avatar {
+      position: relative;
+      right: 0.5rem;
+    }
+    .first .position > p {
+      top: 20%;
+      left: 30%;
+    }
+    .second .position > p {
+      top: 5%;
+      left: 30%;
+      transform: rotate(-4.821deg);
+    }
+    .third .position > p {
+      top: 20%;
+      left: 30%;
+      transform: rotate(12.821deg);
+    }
+
+    .third .avatar {
+      position: relative;
+      left: 1rem;
+      top: 1rem;
+    }
+  }
+}
+
+.otherParticipants {
+  position: relative;
+  bottom: 3rem;
+  border-radius: 25px;
+  background: #fff;
+  width: 100%;
+  height: 52vh;
+  overflow: scroll;
+
+  > div {
+    margin-block-start: 0.5rem;
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 1.2rem;
+    color: #2b262d;
+    text-align: center;
+    font-family: Poppins;
+
+    > span {
+      font-size: 1.3rem;
+      font-weight: 400;
+      margin-inline-end: 1.5rem;
+    }
+
+    .icon {
+      width: 3.4rem;
+      height: 3.4rem;
+      border-radius: 3rem;
+      overflow: hidden;
+
+      > img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+      }
+    }
+
+    > p {
+      font-size: 1.4rem;
+      font-weight: 400;
+      margin-left: 2rem;
+    }
+
+    .score {
+      padding: 0.2rem 0.5rem;
+      margin-inline: auto 0.5rem;
+      border-radius: 1rem;
+      background: rgba(255, 193, 2, 0.6);
+    }
+  }
+}
